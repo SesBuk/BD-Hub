@@ -1,0 +1,1837 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=eb005b71-d657-4cf4-be81-70d6329e09ec
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangladeshi Agency – সেরা কর্মসংস্থান সংস্থা</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    :root {
+      --green: #006A4E;
+      --green-light: #007A5A;
+      --green-dark: #004d38;
+      --red: #F42A41;
+      --red-light: #ff4d61;
+      --gold: #D4AF37;
+      --gold-light: #f0cd5a;
+      --white: #ffffff;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --gray-900: #111827;
+      --shadow: 0 4px 24px rgba(0,0,0,0.10);
+      --shadow-lg: 0 8px 48px rgba(0,0,0,0.16);
+      --radius: 14px;
+      --radius-sm: 8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans Bengali', sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.7;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%);
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .navbar-logo {
+      width: 44px;
+      height: 44px;
+      background: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+    .navbar-title {
+      color: var(--white);
+      font-size: 1.3rem;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .navbar-subtitle {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.72rem;
+      display: block;
+      line-height: 1;
+    }
+    .navbar-contact {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .navbar-contact a {
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+      font-size: 0.82rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.2s;
+    }
+    .navbar-contact a:hover { color: var(--gold-light); }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, #00a86b 100%);
+      color: var(--white);
+      padding: 80px 24px 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 400px; height: 400px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -100px;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: var(--gold-light);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 18px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 18px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    .hero h1 span { color: var(--gold-light); }
+    .hero p {
+      font-size: 1.05rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+    .stat-item {
+      text-align: center;
+    }
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      display: block;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+    .btn-hero {
+      display: inline-block;
+      background: var(--white);
+      color: var(--green-dark);
+      font-family: 'Noto Sans Bengali', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 15px 40px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .btn-hero:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    }
+
+    /* ===== SECTION ===== */
+    .section {
+      padding: 70px 24px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+    }
+    .section-subtitle {
+      text-align: center;
+      color: var(--gray-600);
+      font-size: 0.95rem;
+      margin-bottom: 48px;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .divider {
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green), var(--red));
+      border-radius: 2px;
+      margin: 12px auto 40px;
+    }
+
+    /* ===== WORK DETAILS ===== */
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .work-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      border-left: 4px solid var(--green);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .work-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .work-card-icon {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--green), var(--green-light));
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: white;
+      margin-bottom: 16px;
+    }
+    .work-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 8px;
+    }
+    .work-card p {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+    }
+    .earn-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--green), var(--green-light));
+      color: white;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+
+    /* ===== EARNINGS BANNER ===== */
+    .earnings-banner {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: white;
+      padding: 50px 24px;
+      text-align: center;
+    }
+    .earnings-banner h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .earnings-amount {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      display: block;
+    }
+    .earnings-banner p {
+      opacity: 0.85;
+      font-size: 0.95rem;
+      margin-top: 12px;
+    }
+
+    /* ===== MEMBERSHIP SECTION ===== */
+    .membership-section {
+      background: var(--gray-100);
+      padding: 70px 24px;
+    }
+    #plans-container { display: none; }
+    #plans-container.visible { display: block; animation: fadeInUp 0.5s ease; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn-view-plans {
+      display: block;
+      width: fit-content;
+      margin: 0 auto 48px;
+      background: linear-gradient(135deg, var(--green), var(--green-light));
+      color: white;
+      font-family: 'Noto Sans Bengali', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 16px 44px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(0,106,78,0.35);
+      transition: all 0.3s;
+    }
+    .btn-view-plans:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0,106,78,0.45);
+    }
+    .btn-view-plans i { margin-right: 8px; }
+
+    .plans-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
+      max-width: 800px;
+      margin: 0 auto 50px;
+    }
+    .plan-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 2px solid transparent;
+    }
+    .plan-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--green);
+    }
+    .plan-card.premium {
+      position: relative;
+    }
+    .plan-card.premium:hover { border-color: var(--gold); }
+    .plan-header {
+      padding: 28px 24px 20px;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: white;
+      text-align: center;
+    }
+    .plan-card.premium .plan-header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    }
+    .plan-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: white;
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .plan-card.premium .plan-tag {
+      background: rgba(212,175,55,0.25);
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+    .plan-price {
+      font-size: 2.8rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .plan-price sup { font-size: 1rem; font-weight: 600; vertical-align: top; margin-top: 8px; }
+    .plan-period { font-size: 0.82rem; opacity: 0.75; margin-top: 4px; }
+    .plan-name { font-size: 1.1rem; font-weight: 700; margin-top: 8px; }
+    .plan-body { padding: 24px; }
+    .plan-features { list-style: none; margin-bottom: 20px; }
+    .plan-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--gray-700);
+      margin-bottom: 10px;
+    }
+    .plan-features li i {
+      color: var(--green);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .plan-card.premium .plan-features li i { color: var(--gold); }
+    .btn-select-plan {
+      width: 100%;
+      padding: 13px;
+      background: linear-gradient(135deg, var(--green), var(--green-light));
+      color: white;
+      font-family: 'Noto Sans Bengali', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-select-plan:hover { opacity: 0.9; transform: translateY(-1px); }
+    .plan-card.premium .btn-select-plan {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--gray-900);
+    }
+    .popular-badge {
+      position: absolute;
+      top: 12px; right: 12px;
+      background: var(--red);
+      color: white;
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ===== FORM SECTIONS ===== */
+    .form-section {
+      display: none;
+      max-width: 680px;
+      margin: 0 auto 40px;
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      animation: fadeInUp 0.5s ease;
+    }
+    .form-section.active { display: block; }
+    .form-header {
+      padding: 28px 32px 20px;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: white;
+    }
+    .form-header.premium-header {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    }
+    .form-header h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .form-header p {
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+    .form-price-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: var(--gold-light);
+      font-size: 1.1rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 30px;
+      margin-top: 10px;
+    }
+    .form-body { padding: 32px; }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: 6px;
+    }
+    .form-label .required { color: var(--red); margin-left: 3px; }
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-sm);
+      font-family: 'Noto Sans Bengali', sans-serif;
+      font-size: 0.92rem;
+      color: var(--gray-800);
+      background: var(--gray-50);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(0,106,78,0.1);
+      background: white;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+    /* photo upload */
+    .photo-upload-area {
+      border: 2px dashed var(--gray-300);
+      border-radius: var(--radius-sm);
+      padding: 30px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: var(--gray-50);
+    }
+    .photo-upload-area:hover {
+      border-color: var(--green);
+      background: rgba(0,106,78,0.03);
+    }
+    .photo-upload-area i {
+      font-size: 2.2rem;
+      color: var(--green);
+      margin-bottom: 10px;
+      display: block;
+    }
+    .photo-upload-area p {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+    }
+    .photo-upload-area .upload-hint {
+      font-size: 0.76rem;
+      color: var(--gray-400);
+      margin-top: 4px;
+    }
+    #photo-preview, #photo-preview2 {
+      display: none;
+      width: 100%;
+      max-height: 280px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      margin-top: 14px;
+      border: 2px solid var(--green);
+    }
+    #photo-file, #photo-file2 { display: none; }
+
+    /* step indicator */
+    .steps {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      margin-bottom: 28px;
+    }
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .step-circle {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--gray-200);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--gray-500);
+      transition: all 0.3s;
+    }
+    .step.active .step-circle {
+      background: var(--green);
+      color: white;
+    }
+    .step.done .step-circle {
+      background: var(--green);
+      color: white;
+    }
+    .step-label {
+      font-size: 0.7rem;
+      color: var(--gray-500);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    .step.active .step-label, .step.done .step-label { color: var(--green); }
+    .step-line {
+      width: 40px;
+      height: 2px;
+      background: var(--gray-200);
+      margin-bottom: 18px;
+      transition: background 0.3s;
+    }
+    .step-line.done { background: var(--green); }
+
+    /* form pages */
+    .form-page { display: none; }
+    .form-page.active { display: block; animation: fadeInUp 0.3s ease; }
+
+    /* submit button */
+    .btn-submit {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: white;
+      font-family: 'Noto Sans Bengali', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      margin-top: 8px;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn-submit:hover { opacity: 0.92; transform: translateY(-1px); }
+    .btn-submit.gold-btn {
+      background: linear-gradient(135deg, #b8860b, var(--gold), var(--gold-light));
+      color: var(--gray-900);
+    }
+
+    /* payment section */
+    .payment-section {
+      background: var(--gray-50);
+      border-radius: var(--radius-sm);
+      padding: 24px;
+      border: 1.5px solid var(--gray-200);
+      margin-bottom: 20px;
+    }
+    .payment-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .bkash-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #E2136E;
+      color: white;
+      padding: 10px 18px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 16px;
+    }
+    .bkash-logo-icon {
+      width: 36px; height: 36px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: #E2136E;
+      font-weight: 900;
+    }
+    .bkash-logo span { font-size: 1.1rem; font-weight: 700; }
+
+    .payment-steps {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+    .payment-steps li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--gray-700);
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .payment-steps li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .payment-steps .step-num {
+      width: 22px; height: 22px;
+      background: var(--green);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .bkash-number-box {
+      background: white;
+      border: 2px solid #E2136E;
+      border-radius: var(--radius-sm);
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .bkash-number {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #E2136E;
+      letter-spacing: 1px;
+    }
+    .bkash-number-label {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+      margin-bottom: 2px;
+    }
+    .btn-copy {
+      background: #E2136E;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-family: 'Noto Sans Bengali', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .btn-copy:hover { opacity: 0.88; }
+    .btn-copy.copied { background: var(--green); }
+
+    .amount-display {
+      background: linear-gradient(135deg, var(--green-dark), var(--green));
+      color: white;
+      text-align: center;
+      padding: 14px;
+      border-radius: var(--radius-sm);
+      margin-bottom: 16px;
+      font-size: 1.4rem;
+      font-weight: 800;
+    }
+    .amount-display span { font-size: 0.82rem; opacity: 0.8; display: block; font-weight: 400; margin-bottom: 2px; }
+
+    .txn-box {
+      background: white;
+      border: 1.5px solid var(--gray-200);
+      border-radius: var(--radius-sm);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .txn-box-title {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.85rem;
+      color: var(--gray-700);
+      margin-bottom: 8px;
+    }
+    .checkbox-row input[type="checkbox"] {
+      width: 16px; height: 16px;
+      accent-color: var(--green);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* success message */
+    .success-box {
+      display: none;
+      background: white;
+      border-radius: var(--radius);
+      padding: 48px 32px;
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      max-width: 500px;
+      margin: 0 auto 40px;
+      animation: fadeInUp 0.5s ease;
+    }
+    .success-box.active { display: block; }
+    .success-icon {
+      width: 80px; height: 80px;
+      background: linear-gradient(135deg, var(--green), var(--green-light));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      color: white;
+      margin: 0 auto 20px;
+    }
+    .success-box h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--green-dark);
+      margin-bottom: 12px;
+    }
+    .success-box p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      margin-bottom: 8px;
+    }
+    .telegram-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #0088cc;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-top: 16px;
+      transition: opacity 0.2s;
+    }
+    .telegram-link:hover { opacity: 0.88; }
+
+    /* ===== INFO SECTION ===== */
+    .info-section {
+      background: white;
+      padding: 70px 24px;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+    .info-card {
+      text-align: center;
+      padding: 28px 20px;
+      border-radius: var(--radius);
+      background: var(--gray-50);
+      border: 1.5px solid var(--gray-200);
+      transition: all 0.25s;
+    }
+    .info-card:hover {
+      border-color: var(--green);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+    .info-icon {
+      width: 56px; height: 56px;
+      background: linear-gradient(135deg, var(--green), var(--green-light));
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      margin: 0 auto 16px;
+    }
+    .info-card h3 {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 8px;
+    }
+    .info-card p { font-size: 0.83rem; color: var(--gray-600); }
+
+    /* ===== FAQ ===== */
+    .faq-section { padding: 70px 24px; background: var(--gray-100); }
+    .faq-list { max-width: 700px; margin: 0 auto; }
+    .faq-item {
+      background: white;
+      border-radius: var(--radius-sm);
+      margin-bottom: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .faq-question {
+      padding: 16px 20px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-question i { color: var(--green); transition: transform 0.3s; }
+    .faq-item.open .faq-question i { transform: rotate(180deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 20px 16px;
+      font-size: 0.86rem;
+      color: var(--gray-600);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-answer { display: block; animation: fadeInUp 0.2s ease; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--gray-900);
+      color: rgba(255,255,255,0.8);
+      padding: 48px 24px 24px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 36px;
+      max-width: 900px;
+      margin: 0 auto 32px;
+    }
+    .footer-brand-name {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 10px;
+    }
+    .footer-brand-desc {
+      font-size: 0.82rem;
+      line-height: 1.6;
+      opacity: 0.7;
+    }
+    .footer-col h4 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li {
+      font-size: 0.82rem;
+      margin-bottom: 8px;
+      opacity: 0.7;
+    }
+    .footer-col ul li a { color: inherit; text-decoration: none; }
+    .footer-col ul li a:hover { opacity: 1; color: var(--gold-light); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.78rem;
+      opacity: 0.5;
+    }
+    .social-links { display: flex; gap: 12px; margin-top: 14px; }
+    .social-links a {
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background 0.2s;
+    }
+    .social-links a:hover { background: var(--green); }
+
+    /* Alert */
+    .alert {
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .alert-info { background: #e0f2f1; color: #004d40; border: 1px solid #80cbc4; }
+    .alert-warning { background: #fff3cd; color: #856404; border: 1px solid #ffc107; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero { padding: 60px 16px 70px; }
+      .hero h1 { font-size: 1.8rem; }
+      .hero-stats { gap: 24px; }
+      .form-body { padding: 20px; }
+      .navbar-contact { display: none; }
+    }
+
+    /* Scroll to top */
+    .scroll-top {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      width: 44px; height: 44px;
+      background: var(--green);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      box-shadow: var(--shadow);
+      z-index: 999;
+      transition: all 0.2s;
+    }
+    .scroll-top:hover { background: var(--green-dark); transform: translateY(-2px); }
+    .scroll-top.visible { display: flex; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#" class="navbar-brand">
+    <div class="navbar-logo">🇧🇩</div>
+    <div>
+      <div class="navbar-title">Bangladeshi Agency</div>
+      <span class="navbar-subtitle">সেরা কর্মসংস্থান সংস্থা</span>
+    </div>
+  </a>
+  <div class="navbar-contact">
+    <a href="https://wa.me/8801854484540" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="https://t.me/bangladeshiagency" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">🌟 বাংলাদেশের বিশ্বস্ত প্লে বয় এজেন্সি </div>
+  <h1>আপনার সেরা সুযোগ<br><span>এখনই গ্রহণ করুন</span></h1>
+  <p>Bangladeshi Agency — দেশের সবচেয়ে বিশ্বস্ত ও পেশাদার এজেন্সি যেখানে আপনি সহজেই কাজ খুঁজে পাবেন এবং প্রতিটি কাজে ভালো আয় করতে পারবেন। (কোন প্রকার হিডেন চার্জ ছাড়া) </p>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-number">৫,০০০+</span>
+      <span class="stat-label">সফল সদস্য</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">১০-২০ হাজার</span>
+      <span class="stat-label">প্রতি কাজে আয়</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">১০০%</span>
+      <span class="stat-label">বিশ্বস্ত পরিষেবা</span>
+    </div>
+  </div>
+  <a href="#membership" class="btn-hero" onclick="scrollToMembership(event)">
+     👇মেম্বারশিপ প্লেন 👇
+  </a>
+</section>
+
+<!-- EARNINGS BANNER -->
+<div class="earnings-banner">
+  <h2>প্রতিটি কাজে আপনার আয়</h2>
+  <span class="earnings-amount">১০,০০০ – ২০,০০০ টাকা</span>
+  <p>প্রতিটি অ্যাসাইনমেন্টে ন্যূনতম ১০ হাজার থেকে ২০ হাজার টাকা পর্যন্ত উপার্জন করুন</p>
+</div>
+
+<!-- WORK DETAILS -->
+<section class="section" style="background:white;">
+  <h2 class="section-title">কাজের বিবরণ</h2>
+  <div class="divider"></div>
+  <p class="section-subtitle">আমাদের এজেন্সির মাধ্যমে বিভিন্ন ধরনের কাজে যোগ দিন এবং আকর্ষণীয় আয় করুন</p>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="work-card-icon">🤝</div>
+      <h3>রিলেশনশিপ সার্ভিস</h3>
+      <p>ক্লায়েন্টদের সাথে বয়ফ্রেন্ডের মত সম্পর্ক রাখতে হবে, ইভেন্ট বা ভ্রমণে সঙ্গী হিসেবে কাজ করুন। সম্পূর্ণ বয়ফ্রেন্ডের মতো থাকতে হবে (প্রতি সাপ্তাহে একবার সেক্স করতে হবে)।</p>
+      <span class="earn-badge">আয়: ১০০,০০০–১৫০,০০০ টাকা (মাসিক)</span>
+    </div>
+    <div class="work-card">
+      <div class="work-card-icon">🎉</div>
+      <h3>ইভেন্ট অ্যাটেন্ডেন্স</h3>
+      <p>বিভিন্ন পার্টি, বিবাহ অনুষ্ঠান, কর্পোরেট ইভেন্ট বা সামাজিক গেটটুগেদারে অংশগ্রহণ করুন এবং কমিশন উপার্জন করুন।</p>
+      <span class="earn-badge">আয়: ৮,০০০–১২,০০০ টাকা (প্রতি বারে)</span>
+    </div>
+    <div class="work-card">
+      <div class="work-card-icon">✈️</div>
+      <h3>ট্রাভেল কমপ্যানিয়ন</h3>
+      <p>ক্লায়েন্টের সাথে দেশের বিভিন্ন স্থানে ভ্রমণসঙ্গী হিসেবে কাজ করুন। সকল খরচ ক্লায়েন্ট বহন করবেন। (সেক্স হবে) </p>
+      <span class="earn-badge">আয়: প্রতি ট্যুরে১৫,০০০–৬০,০০০ টাকা</span>
+    </div>
+    <div class="work-card">
+      <div class="work-card-icon">💼</div>
+      <h3>এজেন্সি সার্ভিস</h3>
+      <p>বিভিন্ন কোম্পানির কর্মকর্তা বা ব্যক্তিদের অতিথিদের চাহিদা মিটাতে হবে। এখানে আপনাকে প্রতি কাজের জন্য তারাই আলাদা আলাদা কস্টিউমস দিবেন সেটি পরে অই পেশায় তাদের সাথে সেক্স করতে হবে কিন্তু বিভিন্ন ক্যারেক্টার হিসাবে কাজ করতে হবে যেমন ডক্টর, টিচার, স্টুডেন্ট ইত্যাদি।</p>
+      <span class="earn-badge">আয়: প্রতি কাজে ২০,০০০–৩০,০০০ টাকা</span>
+    </div>
+    <div class="work-card">
+      <div class="work-card-icon">📸</div>
+      <h3>মডেলিং ও ফটোশুট</h3>
+      <p>বিভিন্ন সময় ভিডিও বানানোর কাজ আসে এখানে আপনি চাইলে আপনার ফেস গোপন  রাখতে পারবেন। এখানে আপনাকে স্ক্রিপ্ট অনুযায়ী মেয়েদের সাথে সেক্স করতে হবে। এবং আপনি চাইলে নিজের ফেস শো করে নিজের ক্যারিয়ার গড়ার সুযোগ পাবেন।</p>
+      <span class="earn-badge">আয়: ৪০,০০০–৫০,০০০ টাকা</span>
+    </div>
+    <div class="work-card">
+      <div class="work-card-icon">🌙</div>
+      <h3>নাইটআউট সার্ভিস</h3>
+      <p>রাতের বিভিন্ন সামাজিক অনুষ্ঠান বা ডিনার ইভেন্টে সঙ্গী হিসেবে অংশগ্রহণ করুন। (এবং রাতে ম্যডামের সাথেই থাকতে হবে।) </p>
+      <span class="earn-badge">আয়: ১৫,০০০–২০,০০০ টাকা</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="info-section">
+  <h2 class="section-title">কীভাবে কাজ করে</h2>
+  <div class="divider"></div>
+  <p class="section-subtitle">মাত্র কয়েকটি সহজ ধাপে শুরু করুন এবং আজই আয় শুরু করুন</p>
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-icon">1️⃣</div>
+      <h3>রেজিস্ট্রেশন করুন</h3>
+      <p>মেম্বারশিপ ফর্ম পূরণ করুন এবং আপনার প্রোফাইল তৈরি করুন।</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">💳</div>
+      <h3>পেমেন্ট করুন</h3>
+      <p>bKash-এর মাধ্যমে সহজেই মেম্বারশিপ ফি পরিশোধ করুন।</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">✅</div>
+      <h3>ভেরিফিকেশন</h3>
+      <p>আপনার প্রোফাইল ভেরিফাই করুন এবং একটিভ সদস্য হয়ে যান।</p>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">💰</div>
+      <h3>কাজ করুন ও আয় করুন</h3>
+      <p>ক্লায়েন্টের সাথে যোগাযোগ করুন এবং কাজ সম্পন্ন করে আয় করুন।</p>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP SECTION -->
+<section class="membership-section" id="membership">
+  <h2 class="section-title">মেম্বারশিপ পরিকল্পনা</h2>
+  <div class="divider"></div>
+  <p class="section-subtitle" id="plans-hint-text">আমাদের মেম্বারশিপ প্ল্যান দেখতে নিচের বাটনে ক্লিক করুন</p>
+
+  <button class="btn-view-plans" id="btn-view-plans" onclick="showPlans()">
+    <i class="fas fa-eye"></i> মেম্বারশিপ প্ল্যান দেখুন
+  </button>
+
+  <div id="plans-container">
+    <div class="plans-grid">
+      <!-- LOCAL PLAN -->
+      <div class="plan-card" onclick="selectPlan('local')">
+        <div class="plan-header">
+          <div class="plan-tag">LOCAL</div>
+          <div class="plan-price"><sup>৳</sup>400</div>
+          <div class="plan-period">এককালীন ফি</div>
+          <div class="plan-name">লোকাল মেম্বারশিপ</div>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-features">
+            <li><i class="fas fa-check-circle"></i> আপনার ছবি ও পূর্ণ তথ্যসহ প্রোফাইল তৈরি</li>
+            <li><i class="fas fa-check-circle"></i> ক্লায়েন্টরা সরাসরি WhatsApp-এ যোগাযোগ করবে</li>
+            <li><i class="fas fa-check-circle"></i> নিজেই শর্ত আলোচনা ও চুক্তি করুন</li>
+            <li><i class="fas fa-check-circle"></i> ডে বা নাইট কাজের অপশন</li>
+            <li><i class="fas fa-check-circle"></i> প্রোফাইল ডেটাবেজে অন্তর্ভুক্তি</li>
+          </ul>
+          <button class="btn-select-plan">এই প্ল্যান বেছে নিন</button>
+        </div>
+      </div>
+      <!-- PREMIUM PLAN -->
+      <div class="plan-card premium" onclick="selectPlan('premium')">
+        <span class="popular-badge">🔥 জনপ্রিয়</span>
+        <div class="plan-header premium-header">
+          <div class="plan-tag">PREMIUM</div>
+          <div class="plan-price"><sup>৳</sup>700</div>
+          <div class="plan-period">এককালীন ফি</div>
+          <div class="plan-name">প্রিমিয়াম মেম্বারশিপ</div>
+        </div>
+        <div class="plan-body">
+          <ul class="plan-features">
+            <li><i class="fas fa-crown"></i> আমরা ব্যক্তিগতভাবে আপনার কাজ খুঁজে দেব</li>
+            <li><i class="fas fa-crown"></i> ভেরিফাইড প্রোফাইল ও অগ্রাধিকার তালিকা</li>
+            <li><i class="fas fa-crown"></i> উচ্চ আয়ের ক্লায়েন্টদের সাথে সংযোগ</li>
+            <li><i class="fas fa-crown"></i> Telegram সাপোর্ট ও গাইডেন্স</li>
+            <li><i class="fas fa-crown"></i> দ্রুত ভেরিফিকেশন প্রক্রিয়া</li>
+            <li><i class="fas fa-crown"></i> এক্সক্লুসিভ কাজের সুযোগ</li>
+          </ul>
+          <button class="btn-select-plan">প্রিমিয়াম বেছে নিন</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOCAL MEMBERSHIP FORM -->
+    <div class="form-section" id="form-local">
+      <div class="form-header">
+        <h2>লোকাল মেম্বারশিপ ফর্ম</h2>
+        <p>নিচের তথ্য সঠিকভাবে পূরণ করুন এবং bKash-এ পেমেন্ট করুন</p>
+        <div class="form-price-tag"><i class="fas fa-tag"></i> ৳৪০০ টাকা</div>
+      </div>
+      <div class="form-body">
+        <!-- Steps -->
+        <div class="steps">
+          <div class="step active" id="local-step1-ind">
+            <div class="step-circle">১</div>
+            <div class="step-label">তথ্য পূরণ</div>
+          </div>
+          <div class="step-line" id="local-line1"></div>
+          <div class="step" id="local-step2-ind">
+            <div class="step-circle">২</div>
+            <div class="step-label">ছবি আপলোড</div>
+          </div>
+          <div class="step-line" id="local-line2"></div>
+          <div class="step" id="local-step3-ind">
+            <div class="step-circle">৩</div>
+            <div class="step-label">পেমেন্ট</div>
+          </div>
+          <div class="step-line" id="local-line3"></div>
+          <div class="step" id="local-step4-ind">
+            <div class="step-circle">৪</div>
+            <div class="step-label">নিশ্চিত করুন</div>
+          </div>
+        </div>
+
+        <!-- Page 1: Personal Info -->
+        <div class="form-page active" id="local-page1">
+          <div class="alert alert-info"><i class="fas fa-info-circle"></i> সকল তথ্য সঠিকভাবে প্রদান করুন। ভুল তথ্য দিলে প্রোফাইল বাতিল হতে পারে।</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">পূর্ণ নাম <span class="required">*</span></label>
+              <input type="text" class="form-input" id="l-name" placeholder="আপনার পূর্ণ নাম লিখুন" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">বয়স <span class="required">*</span></label>
+              <input type="number" class="form-input" id="l-age" placeholder="বয়স লিখুন" min="18" max="60" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">সম্পূর্ণ ঠিকানা <span class="required">*</span></label>
+            <input type="text" class="form-input" id="l-address" placeholder="জেলা, উপজেলা, গ্রাম/শহর সহ ঠিকানা লিখুন" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">উচ্চতা <span class="required">*</span></label>
+              <input type="text" class="form-input" id="l-height" placeholder="যেমন: ৫ ফুট ৮ ইঞ্চি" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">কাজের ধরন <span class="required">*</span></label>
+              <select class="form-select" id="l-worktype">
+                <option value="">-- নির্বাচন করুন --</option>
+                <option value="day">১. শুধু দিনের কাজ</option>
+                <option value="night">২. শুধু রাতের কাজ</option>
+                <option value="both">৩. দিন ও রাত উভয়ই</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">ফোন নম্বর <span class="required">*</span></label>
+              <input type="tel" class="form-input" id="l-phone" placeholder="01XXXXXXXXX" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">WhatsApp নম্বর <span class="required">*</span></label>
+              <input type="tel" class="form-input" id="l-whatsapp" placeholder="01XXXXXXXXX" />
+            </div>
+          </div>
+          <button class="btn-submit" onclick="localNextStep(2)">পরবর্তী ধাপ <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Page 2: Photo Upload -->
+        <div class="form-page" id="local-page2">
+          <div class="alert alert-info"><i class="fas fa-camera"></i> একটি ভালো, স্পষ্ট ছবি আপলোড করুন। ছবি প্রোফাইলে ব্যবহার করা হবে।</div>
+          <div class="form-group">
+            <label class="form-label">প্রোফাইল ছবি আপলোড করুন <span class="required">*</span></label>
+            <div class="photo-upload-area" onclick="document.getElementById('photo-file').click()">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>গ্যালারি থেকে ছবি বেছে নিন</p>
+              <p class="upload-hint">JPG, PNG সর্বোচ্চ ৫ MB</p>
+            </div>
+            <input type="file" id="photo-file" accept="image/*" onchange="previewPhoto(this,'photo-preview')" />
+            <img id="photo-preview" alt="ছবির প্রিভিউ" />
+          </div>
+          <div style="display:flex; gap:12px; margin-top:8px;">
+            <button class="btn-submit" style="background:var(--gray-600); flex:1" onclick="localNextStep(1)"><i class="fas fa-arrow-left"></i> পেছনে</button>
+            <button class="btn-submit" style="flex:2" onclick="localNextStep(3)">পরবর্তী ধাপ <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Page 3: Payment -->
+        <div class="form-page" id="local-page3">
+          <div class="payment-section">
+            <div class="payment-title"><i class="fas fa-mobile-alt" style="color:#E2136E;"></i> bKash পেমেন্ট</div>
+            <div class="amount-display"><span>পেমেন্ট করুন মাত্র</span>৳ ৪০০ টাকা</div>
+            <div class="bkash-logo">
+              <div class="bkash-logo-icon">b</div>
+              <div>
+                <div style="font-size:0.72rem; opacity:0.85;">পেমেন্ট করুন</div>
+                <span>bKash</span>
+              </div>
+            </div>
+            <p style="font-size:0.86rem; color:var(--gray-700); font-weight:600; margin-bottom:12px;">📋 পেমেন্টের নির্দেশনা:</p>
+            <ul class="payment-steps">
+              <li>
+                <div class="step-num">১</div>
+                <span>আপনার bKash অ্যাপ খুলুন অথবা ডায়াল করুন <strong>*247#</strong></span>
+              </li>
+              <li>
+                <div class="step-num">২</div>
+                <span><strong>"Send Money"</strong> বা <strong>"পাঠান"</strong> অপশন নির্বাচন করুন</span>
+              </li>
+              <li>
+                <div class="step-num">৩</div>
+                <span>নিচের নম্বরে <strong>৪০০ টাকা</strong> পাঠান</span>
+              </li>
+              <li>
+                <div class="step-num">৪</div>
+                <span>পেমেন্টের রেফারেন্স/নোটে আপনার নাম লিখুন</span>
+              </li>
+              <li>
+                <div class="step-num">৫</div>
+                <span>ট্রানজেকশন আইডি সংগ্রহ করুন এবং নিচে সাবমিট করুন</span>
+              </li>
+            </ul>
+            <div class="bkash-number-box">
+              <div>
+                <div class="bkash-number-label">bKash নম্বর (Send Money)</div>
+                <div class="bkash-number">01854484540</div>
+              </div>
+              <button class="btn-copy" id="copy-btn-local" onclick="copyNumber('01854484540','copy-btn-local')">
+                <i class="fas fa-copy"></i> কপি
+              </button>
+            </div>
+            <div class="alert alert-warning"><i class="fas fa-exclamation-triangle"></i> পেমেন্ট করার পর ট্রানজেকশন আইডি অবশ্যই সংরক্ষণ করুন।</div>
+          </div>
+          <div style="display:flex; gap:12px;">
+            <button class="btn-submit" style="background:var(--gray-600); flex:1" onclick="localNextStep(2)"><i class="fas fa-arrow-left"></i> পেছনে</button>
+            <button class="btn-submit" style="flex:2" onclick="localNextStep(4)">পেমেন্ট সম্পন্ন হয়েছে <i class="fas fa-check"></i></button>
+          </div>
+        </div>
+
+        <!-- Page 4: Transaction ID -->
+        <div class="form-page" id="local-page4">
+          <div class="txn-box">
+            <div class="txn-box-title"><i class="fas fa-receipt" style="color:var(--green);"></i> ট্রানজেকশন আইডি সাবমিট করুন</div>
+            <div class="form-group">
+              <label class="form-label">bKash ট্রানজেকশন আইডি <span class="required">*</span></label>
+              <input type="text" class="form-input" id="l-txn" placeholder="যেমন: 8A67B3C9D2" style="letter-spacing:1px; font-size:1rem; font-weight:600;" />
+              <p style="font-size:0.76rem; color:var(--gray-500); margin-top:4px;">bKash অ্যাপ বা SMS থেকে ট্রানজেকশন আইডি পাবেন</p>
+            </div>
+          </div>
+          <div class="txn-box">
+            <div class="txn-box-title"><i class="fas fa-shield-alt" style="color:var(--green);"></i> যাচাইকরণ ঘোষণা</div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="l-check1" />
+              <label for="l-check1">আমি নিশ্চিত করছি যে উপরে প্রদত্ত সকল তথ্য সঠিক ও সত্য।</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="l-check2" />
+              <label for="l-check2">আমি ৪০০ টাকা bKash-এ পেমেন্ট সম্পন্ন করেছি।</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="l-check3" />
+              <label for="l-check3">আমি Bangladeshi Agency-এর নিয়মাবলী মেনে চলতে সম্মত।</label>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px;">
+            <button class="btn-submit" style="background:var(--gray-600); flex:1" onclick="localNextStep(3)"><i class="fas fa-arrow-left"></i> পেছনে</button>
+            <button class="btn-submit" style="flex:2" onclick="submitLocalForm()"><i class="fas fa-paper-plane"></i> ফর্ম সাবমিট করুন</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOCAL SUCCESS -->
+    <div class="success-box" id="local-success">
+      <div class="success-icon">✅</div>
+      <h2>ফর্ম সফলভাবে সাবমিট হয়েছে!</h2>
+      <p>আপনার আবেদন গ্রহণ করা হয়েছে। ২৪–৪৮ ঘণ্টার মধ্যে আপনার প্রোফাইল সক্রিয় হবে।</p>
+      <p>ক্লায়েন্টরা আপনার WhatsApp নম্বরে সরাসরি যোগাযোগ করবে।</p>
+      <p style="margin-top:12px; font-size:0.82rem; color:var(--gray-500);">যেকোনো সমস্যায় আমাদের সাথে যোগাযোগ করুন।</p>
+      <a href="https://wa.me/8801854484540" class="telegram-link" style="background:#25D366; margin-right:8px;">
+        <i class="fab fa-whatsapp"></i> WhatsApp করুন
+      </a>
+    </div>
+
+    <!-- PREMIUM MEMBERSHIP FORM -->
+    <div class="form-section" id="form-premium">
+      <div class="form-header premium-header">
+        <h2>প্রিমিয়াম মেম্বারশিপ ফর্ম</h2>
+        <p>আমরা ব্যক্তিগতভাবে আপনার কাজ খুঁজে দেব — সম্পূর্ণ তথ্য দিন</p>
+        <div class="form-price-tag"><i class="fas fa-crown"></i> ৳৭০০ টাকা</div>
+      </div>
+      <div class="form-body">
+        <!-- Steps -->
+        <div class="steps">
+          <div class="step active" id="prem-step1-ind">
+            <div class="step-circle">১</div>
+            <div class="step-label">তথ্য পূরণ</div>
+          </div>
+          <div class="step-line" id="prem-line1"></div>
+          <div class="step" id="prem-step2-ind">
+            <div class="step-circle">২</div>
+            <div class="step-label">ছবি আপলোড</div>
+          </div>
+          <div class="step-line" id="prem-line2"></div>
+          <div class="step" id="prem-step3-ind">
+            <div class="step-circle">৩</div>
+            <div class="step-label">পেমেন্ট</div>
+          </div>
+          <div class="step-line" id="prem-line3"></div>
+          <div class="step" id="prem-step4-ind">
+            <div class="step-circle">৪</div>
+            <div class="step-label">নিশ্চিত করুন</div>
+          </div>
+        </div>
+
+        <!-- Premium Page 1 -->
+        <div class="form-page active" id="prem-page1">
+          <div class="alert alert-info"><i class="fas fa-crown" style="color:var(--gold);"></i> প্রিমিয়াম সদস্যরা অগ্রাধিকার পাবেন। তথ্য সঠিকভাবে পূরণ করুন।</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">পূর্ণ নাম <span class="required">*</span></label>
+              <input type="text" class="form-input" id="p-name" placeholder="আপনার পূর্ণ নাম লিখুন" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">বয়স <span class="required">*</span></label>
+              <input type="number" class="form-input" id="p-age" placeholder="বয়স লিখুন" min="18" max="60" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">সম্পূর্ণ ঠিকানা <span class="required">*</span></label>
+            <input type="text" class="form-input" id="p-address" placeholder="জেলা, উপজেলা, গ্রাম/শহর সহ ঠিকানা লিখুন" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">উচ্চতা <span class="required">*</span></label>
+              <input type="text" class="form-input" id="p-height" placeholder="যেমন: ৫ ফুট ৮ ইঞ্চি" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">কাজের ধরন <span class="required">*</span></label>
+              <select class="form-select" id="p-worktype">
+                <option value="">-- নির্বাচন করুন --</option>
+                <option value="day">১. শুধু দিনের কাজ</option>
+                <option value="night">২. শুধু রাতের কাজ</option>
+                <option value="both">৩. দিন ও রাত উভয়ই</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">ফোন নম্বর <span class="required">*</span></label>
+              <input type="tel" class="form-input" id="p-phone" placeholder="01XXXXXXXXX" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">WhatsApp নম্বর <span class="required">*</span></label>
+              <input type="tel" class="form-input" id="p-whatsapp" placeholder="01XXXXXXXXX" />
+            </div>
+          </div>
+          <button class="btn-submit gold-btn" onclick="premNextStep(2)">পরবর্তী ধাপ <i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Premium Page 2: Photo -->
+        <div class="form-page" id="prem-page2">
+          <div class="alert alert-info"><i class="fas fa-camera"></i> একটি পরিষ্কার ও আকর্ষণীয় ছবি আপলোড করুন।</div>
+          <div class="form-group">
+            <label class="form-label">প্রোফাইল ছবি আপলোড করুন <span class="required">*</span></label>
+            <div class="photo-upload-area" onclick="document.getElementById('photo-file2').click()">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>গ্যালারি থেকে ছবি বেছে নিন</p>
+              <p class="upload-hint">JPG, PNG সর্বোচ্চ ৫ MB</p>
+            </div>
+            <input type="file" id="photo-file2" accept="image/*" onchange="previewPhoto(this,'photo-preview2')" />
+            <img id="photo-preview2" alt="ছবির প্রিভিউ" />
+          </div>
+          <div style="display:flex; gap:12px; margin-top:8px;">
+            <button class="btn-submit" style="background:var(--gray-600); flex:1" onclick="premNextStep(1)"><i class="fas fa-arrow-left"></i> পেছনে</button>
+            <button class="btn-submit gold-btn" style="flex:2" onclick="premNextStep(3)">পরবর্তী ধাপ <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Premium Page 3: Payment -->
+        <div class="form-page" id="prem-page3">
+          <div class="payment-section">
+            <div class="payment-title"><i class="fas fa-mobile-alt" style="color:#E2136E;"></i> bKash পেমেন্ট</div>
+            <div class="amount-display" style="background:linear-gradient(135deg,#1a1a2e,#16213e);"><span>পেমেন্ট করুন মাত্র</span>৳ ৭০০ টাকা</div>
+            <div class="bkash-logo">
+              <div class="bkash-logo-icon">b</div>
+              <div>
+                <div style="font-size:0.72rem; opacity:0.85;">পেমেন্ট করুন</div>
+                <span>bKash</span>
+              </div>
+            </div>
+            <p style="font-size:0.86rem; color:var(--gray-700); font-weight:600; margin-bottom:12px;">📋 পেমেন্টের নির্দেশনা:</p>
+            <ul class="payment-steps">
+              <li><div class="step-num">১</div><span>আপনার bKash অ্যাপ খুলুন অথবা ডায়াল করুন <strong>*247#</strong></span></li>
+              <li><div class="step-num">২</div><span><strong>"Send Money"</strong> বা <strong>"পাঠান"</strong> অপশন নির্বাচন করুন</span></li>
+              <li><div class="step-num">৩</div><span>নিচের নম্বরে <strong>৭০০ টাকা</strong> পাঠান</span></li>
+              <li><div class="step-num">৪</div><span>পেমেন্টের রেফারেন্স/নোটে আপনার নাম লিখুন</span></li>
+              <li><div class="step-num">৫</div><span>ট্রানজেকশন আইডি সংগ্রহ করুন এবং নিচে সাবমিট করুন</span></li>
+            </ul>
+            <div class="bkash-number-box">
+              <div>
+                <div class="bkash-number-label">bKash নম্বর (Send Money)</div>
+                <div class="bkash-number">01854484540</div>
+              </div>
+              <button class="btn-copy" id="copy-btn-prem" onclick="copyNumber('01854484540','copy-btn-prem')">
+                <i class="fas fa-copy"></i> কপি
+              </button>
+            </div>
+            <div class="alert alert-warning"><i class="fas fa-exclamation-triangle"></i> পেমেন্ট করার পর ট্রানজেকশন আইডি অবশ্যই সংরক্ষণ করুন।</div>
+          </div>
+          <div style="display:flex; gap:12px;">
+            <button class="btn-submit" style="background:var(--gray-600); flex:1" onclick="premNextStep(2)"><i class="fas fa-arrow-left"></i> পেছনে</button>
+            <button class="btn-submit gold-btn" style="flex:2" onclick="premNextStep(4)">পেমেন্ট সম্পন্ন হয়েছে <i class="fas fa-check"></i></button>
+          </div>
+        </div>
+
+        <!-- Premium Page 4: Transaction ID -->
+        <div class="form-page" id="prem-page4">
+          <div class="txn-box">
+            <div class="txn-box-title"><i class="fas fa-receipt" style="color:var(--gold);"></i> ট্রানজেকশন আইডি সাবমিট করুন</div>
+            <div class="form-group">
+              <label class="form-label">bKash ট্রানজেকশন আইডি <span class="required">*</span></label>
+              <input type="text" class="form-input" id="p-txn" placeholder="যেমন: 8A67B3C9D2" style="letter-spacing:1px; font-size:1rem; font-weight:600;" />
+              <p style="font-size:0.76rem; color:var(--gray-500); margin-top:4px;">bKash অ্যাপ বা SMS থেকে ট্রানজেকশন আইডি পাবেন</p>
+            </div>
+          </div>
+          <div class="txn-box">
+            <div class="txn-box-title"><i class="fas fa-shield-alt" style="color:var(--gold);"></i> যাচাইকরণ ঘোষণা</div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="p-check1" />
+              <label for="p-check1">আমি নিশ্চিত করছি যে উপরে প্রদত্ত সকল তথ্য সঠিক ও সত্য।</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="p-check2" />
+              <label for="p-check2">আমি ৭০০ টাকা bKash-এ পেমেন্ট সম্পন্ন করেছি।</label>
+            </div>
+            <div class="checkbox-row">
+              <input type="checkbox" id="p-check3" />
+              <label for="p-check3">আমি Bangladeshi Agency-এর নিয়মাবলী মেনে চলতে সম্মত।</label>
+            </div>
+          </div>
+          <div style="display:flex; gap:12px;">
+            <button class="btn-submit" style="background:var(--gray-600); flex:1" onclick="premNextStep(3)"><i class="fas fa-arrow-left"></i> পেছনে</button>
+            <button class="btn-submit gold-btn" style="flex:2" onclick="submitPremiumForm()"><i class="fas fa-paper-plane"></i> ফর্ম সাবমিট করুন</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREMIUM SUCCESS -->
+    <div class="success-box" id="prem-success">
+      <div class="success-icon" style="background:linear-gradient(135deg,var(--gold),var(--gold-light)); color:var(--gray-900);">👑</div>
+      <h2>ফর্ম সফলভাবে সাবমিট হয়েছে!</h2>
+      <p style="font-size:1rem; font-weight:600; color:var(--gray-800); margin-bottom:8px;">আপনার প্রিমিয়াম আবেদন গ্রহণ করা হয়েছে।</p>
+      <p>ভেরিফিকেশনের জন্য অনুগ্রহ করে আমাদের <strong>Telegram</strong>-এ যোগাযোগ করুন। আমাদের টিম আপনার সাথে যোগাযোগ করবে এবং কাজ খুঁজে দেওয়া শুরু করবে।</p>
+      <div style="background:#e8f4f8; border:1px solid #b3d9f0; border-radius:8px; padding:14px; margin:16px 0; text-align:left;">
+        <p style="font-size:0.85rem; font-weight:600; color:#0088cc; margin-bottom:6px;"><i class="fab fa-telegram"></i> Telegram-এ যোগাযোগের নির্দেশনা:</p>
+        <p style="font-size:0.82rem; color:var(--gray-700);">১. Telegram অ্যাপ খুলুন<br>২. আমাদের একাউন্ট সার্চ করুন<br>৩. আপনার নাম ও ট্রানজেকশন আইডি পাঠান<br>৪. আমরা ২৪ ঘণ্টার মধ্যে ভেরিফাই করব</p>
+      </div>
+      <a href="https://t.me/+JFMITFb96YQyYzk9" target="_blank" class="telegram-link">
+        <i class="fab fa-telegram"></i> Telegram-এ যোগাযোগ করুন
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <h2 class="section-title">সাধারণ প্রশ্নোত্তর</h2>
+  <div class="divider"></div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">লোকাল ও প্রিমিয়াম মেম্বারশিপের মধ্যে পার্থক্য কী? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">লোকাল মেম্বারশিপে আপনার প্রোফাইল তৈরি করা হয় এবং ক্লায়েন্টরা সরাসরি আপনার সাথে WhatsApp-এ যোগাযোগ করে। প্রিমিয়াম মেম্বারশিপে আমাদের টিম ব্যক্তিগতভাবে আপনার জন্য কাজ খুঁজে দেয় এবং সার্বক্ষণিক সহায়তা প্রদান করে।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">প্রতিটি কাজে কত টাকা আয় করা যায়? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">কাজের ধরন ও সময় অনুযায়ী প্রতিটি অ্যাসাইনমেন্টে ন্যূনতম ১০,০০০ থেকে ২০,০০০ টাকা পর্যন্ত আয় সম্ভব। কিছু ক্ষেত্রে এর বেশিও হতে পারে।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">পেমেন্ট করার পর কতদিনে প্রোফাইল একটিভ হবে? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">সাধারণত ১–২ ঘণ্টার মধ্যে আপনার প্রোফাইল যাচাই করা হবে এবং সক্রিয় করা হবে। প্রিমিয়াম সদস্যদের ক্ষেত্রে আরও দ্রুত হয়।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">কাজ কি নিরাপদ হবে? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">হ্যাঁ, আমাদের সকল কাজ সম্পূর্ণ নিরাপদ। আমরা ক্লায়েন্ট স্ক্রিনিং করি এবং নিরাপদ পরিবেশ নিশ্চিত করি।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">যোগ দিতে বয়সের সীমা কত? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">১৮ থেকে ৬০ বছরের মধ্যে যেকোনো ব্যক্তি আমাদের প্ল্যাটফর্মে যোগ দিতে পারবেন।</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question" onclick="toggleFaq(this)">পেমেন্ট নিরাপদ কিনা? <i class="fas fa-chevron-down"></i></div>
+      <div class="faq-answer">আমরা শুধুমাত্র bKash-এর মাধ্যমে পেমেন্ট গ্রহণ করি যা সম্পূর্ণ নিরাপদ। পেমেন্টের পর আপনি একটি ট্রানজেকশন আইডি পাবেন যা আপনার প্রমাণ হিসেবে কাজ করবে।</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">🇧🇩 Bangladeshi Agency</div>
+      <p class="footer-brand-desc">বাংলাদেশের সেরা ও বিশ্বস্ত কর্মসংস্থান প্ল্যাটফর্ম। আমরা পেশাদারভাবে কাজ খুঁজে দেই এবং আপনার আয় নিশ্চিত করি।</p>
+      <div class="social-links" style="margin-top:14px;">
+        <a href="https://wa.me/8801854484540" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://t.me/+JFMITFb96YQyYzk9" target="_blank"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>দ্রুত লিংক</h4>
+      <ul>
+        <li><a href="#">হোম</a></li>
+        <li><a href="#membership">মেম্বারশিপ</a></li>
+        <li><a href="#">কাজের বিবরণ</a></li>
+        <li><a href="#">যোগাযোগ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>যোগাযোগ</h4>
+      <ul>
+        <li><i class="fab fa-whatsapp"></i> 01854-484540</li>
+        <li><i class="fab fa-telegram"></i> @Bangladeshipbagency</li>
+        <li><i class="fas fa-clock"></i> সকাল ৯টা – রাত ১০টা</li>
+        <li><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© ২০২৪ Bangladeshi Agency। সর্বস্বত্ব সংরক্ষিত। | গোপনীয়তা নীতি | শর্তাবলী</p>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+  // === SHOW PLANS ===
+  function showPlans() {
+    const container = document.getElementById('plans-container');
+    const btn = document.getElementById('btn-view-plans');
+    const hint = document.getElementById('plans-hint-text');
+    container.classList.add('visible');
+    btn.style.display = 'none';
+    hint.style.display = 'none';
+    container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function scrollToMembership(e) {
+    e.preventDefault();
+    const el = document.getElementById('membership');
+    el.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(showPlans, 600);
+  }
+
+  // === SELECT PLAN ===
+  function selectPlan(plan) {
+    document.getElementById('form-local').classList.remove('active');
+    document.getElementById('form-premium').classList.remove('active');
+    document.getElementById('local-success').classList.remove('active');
+    document.getElementById('prem-success').classList.remove('active');
+    if (plan === 'local') {
+      document.getElementById('form-local').classList.add('active');
+    } else {
+      document.getElementById('form-premium').classList.add('active');
+    }
+    setTimeout(() => {
+      document.getElementById(plan === 'local' ? 'form-local' : 'form-premium').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+
+  // === LOCAL FORM STEPS ===
+  let localCurrentPage = 1;
+  function localNextStep(page) {
+    if (page > localCurrentPage && !validateLocalPage(localCurrentPage)) return;
+    document.querySelectorAll('#form-local .form-page').forEach(p => p.classList.remove('active'));
+    document.getElementById('local-page' + page).classList.add('active');
+    updateStepIndicator('local', page);
+    localCurrentPage = page;
+    document.getElementById('form-local').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function validateLocalPage(page) {
+    if (page === 1) {
+      const n = document.getElementById('l-name').value.trim();
+      const ag = document.getElementById('l-age').value;
+      const ad = document.getElementById('l-address').value.trim();
+      const h = document.getElementById('l-height').value.trim();
+      const w = document.getElementById('l-worktype').value;
+      const ph = document.getElementById('l-phone').value.trim();
+      const wa = document.getElementById('l-whatsapp').value.trim();
+      if (!n || !ag || !ad || !h || !w || !ph || !wa) {
+        alert('অনুগ্রহ করে সকল তথ্য পূরণ করুন।'); return false;
+      }
+      if (parseInt(ag) < 18) { alert('বয়স কমপক্ষে ১৮ হতে হবে।'); return false; }
+    }
+    if (page === 2) {
+      if (!document.getElementById('photo-preview').style.display || document.getElementById('photo-preview').style.display === 'none') {
+        alert('অনুগ্রহ করে একটি ছবি আপলোড করুন।'); return false;
+      }
+    }
+    return true;
+  }
+
+  // === PREMIUM FORM STEPS ===
+  let premCurrentPage = 1;
+  function premNextStep(page) {
+    if (page > premCurrentPage && !validatePremPage(premCurrentPage)) return;
+    document.querySelectorAll('#form-premium .form-page').forEach(p => p.classList.remove('active'));
+    document.getElementById('prem-page' + page).classList.add('active');
+    updateStepIndicator('prem', page);
+    premCurrentPage = page;
+    document.getElementById('form-premium').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function validatePremPage(page) {
+    if (page === 1) {
+      const n = document.getElementById('p-name').value.trim();
+      const ag = document.getElementById('p-age').value;
+      const ad = document.getElementById('p-address').value.trim();
+      const h = document.getElementById('p-height').value.trim();
+      const w = document.getElementById('p-worktype').value;
+      const ph = document.getElementById('p-phone').value.trim();
+      const wa = document.getElementById('p-whatsapp').value.trim();
+      if (!n || !ag || !ad || !h || !w || !ph || !wa) {
+        alert('অনুগ্রহ করে সকল তথ্য পূরণ করুন।'); return false;
+      }
+      if (parseInt(ag) < 18) { alert('বয়স কমপক্ষে ১৮ হতে হবে।'); return false; }
+    }
+    if (page === 2) {
+      if (!document.getElementById('photo-preview2').style.display || document.getElementById('photo-preview2').style.display === 'none') {
+        alert('অনুগ্রহ করে একটি ছবি আপলোড করুন।'); return false;
+      }
+    }
+    return true;
+  }
+
+  function updateStepIndicator(prefix, activePage) {
+    for (let i = 1; i <= 4; i++) {
+      const stepEl = document.getElementById(prefix + '-step' + i + '-ind');
+      if (i < activePage) {
+        stepEl.className = 'step done';
+        stepEl.querySelector('.step-circle').innerHTML = '<i class="fas fa-check" style="font-size:12px;"></i>';
+      } else if (i === activePage) {
+        stepEl.className = 'step active';
+        stepEl.querySelector('.step-circle').textContent = i;
+      } else {
+        stepEl.className = 'step';
+        stepEl.querySelector('.step-circle').textContent = i;
+      }
+      if (i < 4) {
+        const lineEl = document.getElementById(prefix + '-line' + i);
+        lineEl.className = 'step-line' + (i < activePage ? ' done' : '');
+      }
+    }
+  }
+
+  // === PHOTO PREVIEW ===
+  function previewPhoto(input, previewId) {
+    const file = input.files[0];
+    if (!file) return;
+    if (file.size > 5 * 1024 * 1024) { alert('ছবির সাইজ ৫ MB-এর বেশি হওয়া যাবে না।'); return; }
+    const reader = new FileReader();
+    reader.onload = e => {
+      const img = document.getElementById(previewId);
+      img.src = e.target.result;
+      img.style.display = 'block';
+    };
+    reader.readAsDataURL(file);
+  }
+
+  // === COPY NUMBER ===
+  function copyNumber(num, btnId) {
+    navigator.clipboard.writeText(num).then(() => {
+      const btn = document.getElementById(btnId);
+      btn.classList.add('copied');
+      btn.innerHTML = '<i class="fas fa-check"></i> কপি হয়েছে';
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.innerHTML = '<i class="fas fa-copy"></i> কপি';
+      }, 2500);
+    }).catch(() => {
+      const el = document.createElement('textarea');
+      el.value = num; document.body.appendChild(el); el.select();
+      document.execCommand('copy'); document.body.removeChild(el);
+      const btn = document.getElementById(btnId);
+      btn.classList.add('copied');
+      btn.innerHTML = '<i class="fas fa-check"></i> কপি হয়েছে';
+      setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = '<i class="fas fa-copy"></i> কপি'; }, 2500);
+    });
+  }
+
+  // === SUBMIT LOCAL ===
+  function submitLocalForm() {
+    const txn = document.getElementById('l-txn').value.trim();
+    if (!txn) { alert('অনুগ্রহ করে ট্রানজেকশন আইডি লিখুন।'); return; }
+    if (!document.getElementById('l-check1').checked || !document.getElementById('l-check2').checked || !document.getElementById('l-check3').checked) {
+      alert('অনুগ্রহ করে সকল যাচাইকরণ বক্সে টিক দিন।'); return;
+    }
+    document.getElementById('form-local').classList.remove('active');
+    document.getElementById('local-success').classList.add('active');
+    document.getElementById('local-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // === SUBMIT PREMIUM ===
+  function submitPremiumForm() {
+    const txn = document.getElementById('p-txn').value.trim();
+    if (!txn) { alert('অনুগ্রহ করে ট্রানজেকশন আইডি লিখুন।'); return; }
+    if (!document.getElementById('p-check1').checked || !document.getElementById('p-check2').checked || !document.getElementById('p-check3').checked) {
+      alert('অনুগ্রহ করে সকল যাচাইকরণ বক্সে টিক দিন।'); return;
+    }
+    document.getElementById('form-premium').classList.remove('active');
+    document.getElementById('prem-success').classList.add('active');
+    document.getElementById('prem-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  // === FAQ ===
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // === SCROLL TOP ===
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('scrollTopBtn');
+    btn.classList.toggle('visible', window.scrollY > 300);
+  });
+</script>
+</body>
+</html>
